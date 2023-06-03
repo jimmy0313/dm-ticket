@@ -20,8 +20,7 @@
 
 ### 使用docker
 
-- 下载docker-compose配置文件: `wget https://github.com/ClassmateLin/dm-ticket/releases/download/{版本号}/dm-ticket-v1.0.4.tar.gz`
-- 解压zip: `tar -zxvf dm-ticket-{版本号}.tar.gz && cd dm-ticket`
+-  在[release](https://github.com/ClassmateLin/dm-ticket/releases)页面下载相应版本的docker-compose配置压缩包并解压。
 - 运行容器: `docker-compose up -d`
 - 修改配置: `vim config/config.yaml`, 配置项在config/config.yaml中有详细注释。
 - 运行脚本: `docker exec -it dm-ticket dm-ticket`
@@ -67,6 +66,7 @@
 - 是否支持多账号, v0.1.0版本是支持多账号的。后续可能取消。要实现多账号支持, 开启多个docker容器也可以支持。
 - 频繁尝试运行程序出现,  ["RGV587_ERROR::SM::哎哟喂,被挤爆啦,请稍后重试!"], 就不要试了。
 - 仅支持[H5端](https://m.damai.cn)可以购买的票。
+- 不支持选座。
 
 
 ## 其他说明
@@ -104,6 +104,3 @@
 - [rust-scripts](https://github.com/ClassmateLin/rust-scripts): Rust写的一些小工具。
 - [...](https://github.com/ClassmateLin?tab=repositories&q=&type=&language=&sort=) 
 
-
-
-**本人是PHP两年半练习生, Rust学了点皮毛, 寻一份Rust打杂的工作。。。**
